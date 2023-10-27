@@ -6,8 +6,8 @@ This project demonstrates the integration of the Aiia API using Flask and the `h
 
 1. **Clone the repository:**
     ```bash
-    git clone [<repository_url>](https://github.com/mart337i/aiia_python)
-    cd [<repository_directory>](https://github.com/mart337i/aiia_python)
+    git clone git@github.com:mart337i/aiia_python.git
+    cd aiia_python
     ```
 
 2. **Install the required dependencies:**
