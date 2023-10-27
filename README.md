@@ -12,10 +12,12 @@ This project demonstrates the integration of the Aiia API using Flask and the `h
 
 2. **Install the required dependencies:**
     ```bash
+    # NOTE:: request did not work.
+    # i think it has somthing to do with the diffrence between HTTP/1.1 and HTTP/2 which is the only reason i did httpx over request
     pip install flask httpx python-dotenv
     ```
 
-3. **Set up your environment variables:**
+4. **Set up your environment variables:**
 
     Copy the provided `.env.example` to a new file named `.env`:
     ```bash
@@ -29,7 +31,7 @@ This project demonstrates the integration of the Aiia API using Flask and the `h
     REDIRECT_URL=http://localhost:5000/callback
     ```
 
-4. **Run the Application:**
+5. **Run the Application:**
     ```bash
     python main.py
     ```
