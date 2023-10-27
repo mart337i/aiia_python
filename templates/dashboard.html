@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aiia Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Aiia Accounts Dashboard</h1>
+        <table class="table table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Account Name</th>
+                    <th>Bank Name</th>
+                    <th>Owner</th>
+                    <th>Available Balance</th>
+                    <th>Booked Balance</th>
+                    <th>IBAN</th>
+                    <th>Currency</th>
+                    <th>Last Synced</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for account in accounts %}
+                <tr>
+                    <td>{{ account.name }}</td>
+                    <td>{{ account.accountProvider.name }}</td>
+                    <td>{{ account.owner }}</td>
+                    <td>{{ account.available.value }} {{ account.available.currency }}</td>
+                    <td>{{ account.booked.value }} {{ account.booked.currency }}</td>
+                    <td>{{ account.number.iban }}</td>
+                    <td>{{ account.currency }}</td>
+                    <td>{{ account.lastSynchronized }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Bootstrap JS (Optional, if you need Bootstrap's JS functionality) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

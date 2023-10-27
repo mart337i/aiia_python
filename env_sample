@@ -1,0 +1,3 @@
+CLIENT_ID = 'demoapp-7a5b1234-abcd-5678-efgh-9ijk0123l456'
+CLIENT_SECRET = 'a1b2c3d8e4f5g6h7i9j0k8l7m6n5o4p3q2r1s0t2u3v4w5x6y7z8a9b0c1d2e3f4'
+REDIRECT_URL = 'http://localhost:5000/callback'  # Callback URL for our Flask app
