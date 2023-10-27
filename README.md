@@ -35,7 +35,3 @@ This project demonstrates the integration of the Aiia API using Flask and the `h
     ```
 
 Visit `http://localhost:5000` in your browser to use the application.
-
-## License
-
-MIT
